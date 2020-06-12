@@ -1,4 +1,4 @@
-# Lo2IoTHub
+# Lo2FEDis
 
 Spring Boot project reading events from Live Objects MQTT and pushing them to Azure IoT Hub, registering devices in IoT Hub previously registered in Live Objects and receiving commands from IoT Hub and sending them to the devices via Live Objects API.
 

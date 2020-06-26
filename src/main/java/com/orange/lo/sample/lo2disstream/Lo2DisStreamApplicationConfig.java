@@ -5,7 +5,7 @@
 * LICENSE file in the root directory of this source tree. 
 */
 
-package com.orange.lo.sample.lo2iothub;
+package com.orange.lo.sample.lo2disstream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -16,18 +16,18 @@ import org.springframework.integration.dsl.IntegrationFlows;
 import org.springframework.integration.endpoint.MessageProducerSupport;
 import org.springframework.messaging.Message;
 
-import com.orange.lo.sample.lo2iothub.azure.MessageSender;
+import com.orange.lo.sample.lo2disstream.flexible_engine.MessageSender;
 
 @EnableIntegration
 @Configuration
-public class Lo2IotHubApplicationConfig {
+public class Lo2DisStreamApplicationConfig {
 
 	private MessageProducerSupport mqttInbound;
 	private MessageSender messageSender;
 	private Counters counterProvider;
 	
 	@Autowired
-	public Lo2IotHubApplicationConfig(MessageProducerSupport mqttInbound, MessageSender messageSender, Counters counterProvider) {
+	public Lo2DisStreamApplicationConfig(MessageProducerSupport mqttInbound, MessageSender messageSender, Counters counterProvider) {
 		this.mqttInbound = mqttInbound;
 		this.messageSender = messageSender;
 		this.counterProvider = counterProvider;

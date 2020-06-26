@@ -5,7 +5,7 @@
 * LICENSE file in the root directory of this source tree. 
 */
 
-package com.orange.lo.sample.lo2iothub.lo;
+package com.orange.lo.sample.lo2disstream.lo;
 
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.slf4j.Logger;
@@ -19,12 +19,11 @@ import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
 import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 
-import com.orange.lo.sample.lo2iothub.azure.IoTDeviceProvider;
 
 @Configuration
 public class LoConfig {
 	
-	private static final Logger LOG = LoggerFactory.getLogger(IoTDeviceProvider.class);
+	private static final Logger LOG = LoggerFactory.getLogger(LoConfig.class);
 	
 	private LoProperties loProperties;
 

@@ -5,7 +5,7 @@
 * LICENSE file in the root directory of this source tree. 
 */
 
-package com.orange.lo.sample.lo2iothub.lo;
+package com.orange.lo.sample.lo2disstream.lo;
 
 
 import com.fasterxml.jackson.annotation.JsonCreator;
